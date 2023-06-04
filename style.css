@@ -1,0 +1,96 @@
+body {
+  background-color: #2b2b2bb9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  border: 20px solid #000000;
+  border-radius: 10px;
+  background-color: #fc1ae979;
+  padding: 20px;
+  box-shadow: 0px 0px 105px rgba(10, 14, 226, 0.966);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #000000fb;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+
+#score {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+
+#startButton {
+  display: block;
+  margin: 0 auto;
+  font-size: 16px;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #0c0c0c;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#startButton:hover {
+  background-color: #45a049;
+}
+
+#controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#controls button {
+  font-size: 24px;
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #008CBA;
+  color: #000000;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#controls button:hover {
+  background-color: #05cdff;
+}
+
+#speedControl {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#speedControl label {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+#speedControl input {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.container.collision {
+  animation: shake 0.3s linear;
+  border-color: #FF0000; /* Color del marco en caso de colisión */
+}
+
+/* Estilos para el canvas del juego */
+#gameCanvas {
+  border: 9px solid #000;
+}
